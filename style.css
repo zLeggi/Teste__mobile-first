@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('assets/css/home.css');
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --cor-de-fundo: #D9D9D9;
+  --cor-principal: #E3F1FF;
+  --cor-secundaria: #F9EEDC;
+  --cor-destaque: #E0BA77;
+  
+  --fonte-principal: "Poppins", sans-serif;
+  --fonte-secundaria: "Cinzel Decorative", sans-serif;
+
+  --branco: #ffffff;
+  --preto: 000000;
+  
+}
+
+
+.banner i{
+  content: url(assets/img/seta.svg);
+
+  width: 5rem;
+}
