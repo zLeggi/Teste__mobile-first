@@ -1,18 +1,14 @@
-.logo {
-  width: 1.5rem;
-}
-
 .header {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
   align-items: center;
   z-index: 2;
-  
+  width: 100vw;
 }
 
-.navigation{
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -34,8 +30,6 @@
   border-radius: 0.2rem;
   transition: max-width 0.5s ease;
   justify-content: center;
-
-
 }
 
 .menu li {
@@ -82,19 +76,17 @@
 
 .checkbox__toggle:checked ~ #container__rotulo {
   content: url(../img/menu-hamburger-open.svg);
-  
 }
 
 .checkbox__toggle:checked ~ .header {
-  z-index: 0; 
+  z-index: 0;
 }
-
 
 .banner {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 100vh;
   background-color: #505050;
@@ -103,7 +95,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  box-shadow: 0px 50px 9px 0px rgba(0, 0, 0, 0.25) inset, 0px 96px 24px 0px #000;
+
   top: 0;
 }
 
@@ -112,12 +104,13 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.7rem;
+  height: 90;
 }
 
 .banner p {
   color: var(--cor-principal);
-  font-family: Poppins;
-  font-size: .9rem;
+  font-family: Poppins, "sans-serif";
+  font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.3rem;
 
@@ -127,7 +120,6 @@
 .banner__container-titulo--text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -148,12 +140,165 @@
   animation: moveUpDown 2.5s infinite alternate;
 }
 
-
 @keyframes moveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px); 
+    transform: translateY(10px);
   }
 }
+
+/* ----------------main--------------- */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/bg-2.jpg);
+  background-color: #363636;
+  background-blend-mode: multiply;
+  box-shadow: 0px 130px 28px -10px #000 inset;
+  padding: 20px;
+}
+.main__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main__intro img {
+  width: 90px;
+}
+
+.main__intro-cite {
+  color: var(--branco);
+  text-align: center;
+  font-family: Cinzel Decorative;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+
+  margin-top: 3.5rem;
+}
+
+.main__intro-cite span {
+  display: block;
+
+}
+
+.main__intro-author {
+  color: var(--cor-principal);
+  font-family: poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.main__intro-author span {
+  display: block;
+  font-family: cinzel, "sans-sherif";
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.main h2 {
+  color: var(--White, #e3f1ff);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem; /* 200% */
+  text-transform: uppercase;
+  margin: 3rem 0 1rem 0;
+}
+
+.main h2 span {
+  color: var(--cor-destaque);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.container__card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 90%;
+  height: 170px;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.7) inset;
+}
+
+.container__card h3 {
+  color: var(--cor-principal);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.card-1 {
+  background-image: url(../img/image1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-2 {
+  background-image: url(../img/image2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-3 {
+  background-image: url(../img/image3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container__card-cite {
+  color: var(--branco);
+  text-align: center;
+  font-family: Poppins;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; 
+  margin-top: 4rem;
+  padding: .5rem;
+}
+
+.container__card-autor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--cor-destaque);
+  font-family: Roboto;
+  font-size: .6rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-top: .8rem;
+}
+
+.container__card-autor span {
+  display: block;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+
