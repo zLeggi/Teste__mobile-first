@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  list-style: none;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 .header {
   position: absolute;
   display: flex;
@@ -26,7 +37,7 @@
   height: 100vh;
   top: 0;
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(.18rem);
   border-radius: 0.2rem;
   transition: max-width 0.5s ease;
   justify-content: center;
@@ -84,13 +95,14 @@
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
   position: relative;
   max-width: 100vw;
   height: 100vh;
   background-color: var(--cor-de-fundo);
   background-image: url(../img/banner-mobile.jpg);
-  background-position: -240px 0px;
+  background-position: -15rem 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -103,13 +115,11 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.7rem;
-  height: 90;
-  margin-top: 25%;
 }
 
 .banner p {
   color: var(--cor-principal);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.3rem;
 
@@ -133,12 +143,11 @@
 .banner__container-titulo--text h1 {
   color: var(--cor-principal);
   text-align: center;
-  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.95);
+  text-shadow: 0 .18rem .31rem rgba(0, 0, 0, 0.95);
   font-family: Cinzel Decorative;
   font-size: 3rem;
   font-weight: 700;
   line-height: 4rem;
-  margin-bottom: 5rem;
 }
 
 .banner__container-titulo--text i {
@@ -167,7 +176,7 @@
   background-image: url(../img/bg-2.jpg);
   background-color: var(--cor-de-fundo);
   background-blend-mode: multiply;
-  box-shadow: 0px 8.125rem 1.75rem -0.625rem #000 inset;
+  box-shadow: 0 8.125rem 1.75rem -0.625rem #000 inset;
   padding: 1rem 1.25rem;
 }
 
@@ -214,7 +223,7 @@
 }
 
 .main h2 {
-  color: var(--White, #e3f1ff);
+  color: var(--cor-principal);
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
@@ -227,6 +236,7 @@
   color: var(--cor-destaque);
 }
 
+
 .card__list {
   display: flex;
   flex-direction: column;
@@ -237,8 +247,8 @@
 
 .container__card{
   display: flex;
-  width: 250px;
-  height: 160px;
+  width: 15.64rem;
+  height: 10rem;
   align-items: self-end;
 }
 
@@ -254,31 +264,31 @@
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  font-size: 24px;
+  text-shadow: .25rem .25rem .25rem rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 2rem;
 }
 
 .card-1 {
   background-image: url(../img/image-1.png);
   background-size: cover;
   background-position: center;
-  filter: drop-shadow(0px -2px 20px  20px var(--cor-principal)));
+  filter: drop-shadow(0 -.125rem 1.25rem  1.25rem var(--cor-principal));
 }
 
 .card-2 {
   background-image: url(../img/image-2.png);
   background-size: cover;
   background-position: center;
-  filter: drop-shadow(0px -2px 20px  20px var(--cor-principal));
+  filter: drop-shadow(0 -.125rem 1.25rem  1.25rem var(--cor-principal));
 }
 
 .card-3 {
   background-image: url(../img/image-3.png);
   background-size: cover;
   background-position: center;
-  filter: drop-shadow(0px -2px 20px  20px var(--cor-principal));
+  filter: drop-shadow(0 -.125rem 1.25rem  1.25rem var(--cor-principal));
 }
 
 .container__card-cite {
@@ -286,7 +296,7 @@
   text-align: center;
   font-size: .8rem;
   font-weight: 400;
-  line-height: 16px; 
+  line-height: 1rem; 
 }
 
 .container__card-cite {
@@ -315,5 +325,14 @@
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.25rem;
+  text-align: center;
+}
+
+
+.footer{
+  background-color: var(--preto);
+}
+
+.footer a {
   text-align: center;
 }
