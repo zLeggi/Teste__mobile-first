@@ -1,30 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+/* Import fontes do google */
 
-@import url('assets/css/home.css');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Importes de CSS */
+
+@import url("assets/css/header.css");
+@import url("assets/css/main.css");
+@import url("assets/css/footer.css");
 
 /* Reset de estilos */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-html{
+html {
   font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
   --cor-de-fundo: #505050;
-  --cor-principal: #E3F1FF;
-  --cor-secundaria: #F9EEDC;
-  --cor-destaque: #E0BA77;
-  
+  --cor-principal: #e3f1ff;
+  --cor-secundaria: #f9eedc;
+  --cor-destaque: #e0ba77;
+
   --fonte-principal: "Poppins", sans-serif;
   --fonte-secundaria: "Cinzel Decorative", sans-serif;
 
   --branco: #ffffff;
   --preto: #000000;
-  
-}
-
-
-.banner i{
-  content: url(assets/img/seta.svg);
-
-  width: 5rem;
 }

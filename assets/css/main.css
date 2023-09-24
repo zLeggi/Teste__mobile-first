@@ -1,0 +1,160 @@
+/* ----------------main--------------- */
+
+.main {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+  background-image: url(../img/bg-2.jpg);
+  background-color: var(--cor-de-fundo);
+  background-blend-mode: multiply;
+  box-shadow: 0 8.125rem 1.75rem -0.625rem #000 inset;
+  padding: 1rem;
+}
+
+.main__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main__intro img {
+  width: 5.625rem;
+}
+
+.main__intro-cite {
+  color: var(--branco);
+  text-align: center;
+  font-family: Cinzel Decorative;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+
+  margin-top: 3.5rem;
+}
+
+.main__intro-cite span {
+  display: block;
+}
+
+.main__intro-author {
+  color: var(--cor-destaque);
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.main__intro-author span {
+  display: block;
+  font-family: cinzel, "sans-sherif";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+.main h2 {
+  color: var(--cor-principal);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-transform: uppercase;
+  margin: 3rem 0 1rem 0;
+}
+
+.main h2 span {
+  color: var(--cor-destaque);
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 15rem;
+}
+
+.card__link {
+  text-decoration: none;
+
+  color: var(--cor-secundaria);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  background-color: var(--cor-de-fundo);
+}
+
+.card h3 {
+  color: var(--cor-principal);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.8rem;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.card-1 {
+  background-image: url(../img/image-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  filter: drop-shadow(0 -0.125rem 1.25rem 1.25rem var(--cor-principal));
+}
+
+.card-2 {
+  background-image: url(../img/image-2.png);
+  background-size: cover;
+  background-position: top center;
+  filter: drop-shadow(0 -0.125rem 1.25rem 1.25rem var(--cor-principal));
+}
+
+.card-3 {
+  background-image: url(../img/image-3.png);
+  background-size: cover;
+  background-position: top left center;
+  filter: drop-shadow(0 -0.125rem 1.25rem 1.25rem var(--cor-principal));
+}
+
+.container__card-cite {
+  color: var(--branco);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-top: 3rem;
+  padding: 0.5rem 0;
+}
+
+.container__card-autor {
+  color: var(--cor-destaque);
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1rem;
+  text-align: center;
+  margin: 0.8rem 0;
+}
+
+.container__card-autor span {
+  display: block;
+  font-family: cinzel, "sans-sherif";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+}
