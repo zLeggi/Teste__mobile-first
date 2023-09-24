@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   list-style: none;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -37,7 +37,7 @@ body{
   height: 100vh;
   top: 0;
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(.18rem);
+  backdrop-filter: blur(0.18rem);
   border-radius: 0.2rem;
   transition: max-width 0.5s ease;
   justify-content: center;
@@ -95,8 +95,7 @@ body{
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-evenly;
   position: relative;
   max-width: 100vw;
   height: 100vh;
@@ -129,7 +128,7 @@ body{
 .banner .p-destaque {
   color: var(--cor-destaque);
   text-align: right;
-  font-size:1rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.4rem;
 }
@@ -143,7 +142,7 @@ body{
 .banner__container-titulo--text h1 {
   color: var(--cor-principal);
   text-align: center;
-  text-shadow: 0 .18rem .31rem rgba(0, 0, 0, 0.95);
+  text-shadow: 0 0.18rem 0.31rem rgba(0, 0, 0, 0.95);
   font-family: Cinzel Decorative;
   font-size: 3rem;
   font-weight: 700;
@@ -171,13 +170,14 @@ body{
 
 .main {
   display: flex;
+  align-items: center;
   width: 100vw;
   flex-direction: column;
   background-image: url(../img/bg-2.jpg);
   background-color: var(--cor-de-fundo);
   background-blend-mode: multiply;
   box-shadow: 0 8.125rem 1.75rem -0.625rem #000 inset;
-  padding: 1rem 1.25rem;
+  padding: 1rem;
 }
 
 .main__intro {
@@ -236,27 +236,35 @@ body{
   color: var(--cor-destaque);
 }
 
-
 .card__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
+  gap: 1.6rem;
 }
 
-.container__card{
+.card {
   display: flex;
-  width: 15.64rem;
-  height: 10rem;
-  align-items: self-end;
+  justify-content: center;
+  align-items: flex-end;
+
+  height: 12rem;
 }
 
-.card__link{
+.card__link {
   text-decoration: none;
+
+  color: var(--cor-secundaria);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  background-color: var(--cor-de-fundo);
 }
 
-.container__card h3 {
+.card h3 {
   color: var(--cor-principal);
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0.5rem;
@@ -264,7 +272,7 @@ body{
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  text-shadow: .25rem .25rem .25rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
@@ -273,30 +281,23 @@ body{
 .card-1 {
   background-image: url(../img/image-1.png);
   background-size: cover;
-  background-position: center;
-  filter: drop-shadow(0 -.125rem 1.25rem  1.25rem var(--cor-principal));
+  background-repeat: no-repeat;
+  background-position: top center;
+  filter: drop-shadow(0 -0.125rem 1.25rem 1.25rem var(--cor-principal));
 }
 
 .card-2 {
   background-image: url(../img/image-2.png);
   background-size: cover;
-  background-position: center;
-  filter: drop-shadow(0 -.125rem 1.25rem  1.25rem var(--cor-principal));
+  background-position: top center;
+  filter: drop-shadow(0 -0.125rem 1.25rem 1.25rem var(--cor-principal));
 }
 
 .card-3 {
   background-image: url(../img/image-3.png);
   background-size: cover;
-  background-position: center;
-  filter: drop-shadow(0 -.125rem 1.25rem  1.25rem var(--cor-principal));
-}
-
-.container__card-cite {
-  color: var(--branco);
-  text-align: center;
-  font-size: .8rem;
-  font-weight: 400;
-  line-height: 1rem; 
+  background-position: top left center;
+  filter: drop-shadow(0 -0.125rem 1.25rem 1.25rem var(--cor-principal));
 }
 
 .container__card-cite {
@@ -315,8 +316,7 @@ body{
   font-weight: 300;
   line-height: 1rem;
   text-align: center;
-  margin-top: 0.8rem;
-
+  margin: 0.8rem 0;
 }
 
 .container__card-autor span {
@@ -328,11 +328,57 @@ body{
   text-align: center;
 }
 
-
-.footer{
+.footer {
+  display: flex;
   background-color: var(--preto);
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.sta p {
+  color: var(--branco);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 0.9rem;
+}
+
+.sta img {
+  width: 5rem;
 }
 
 .footer a {
   text-align: center;
+  text-decoration: none;
+  color: var(--branco);
+}
+
+.contatos h4 {
+  color: var(--cor-principal);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contatos a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--cor-principal);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: 0.75rem;
+  gap: .5rem;
+}
+
+.fa {
+  color: var(--cor-principal);
+  font-size: 1rem;
+  width: 1rem;
 }
