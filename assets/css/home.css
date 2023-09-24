@@ -247,7 +247,7 @@ body {
   justify-content: center;
   align-items: flex-end;
 
-  height: 12rem;
+  height: 15rem;
 }
 
 .card__link {
@@ -267,7 +267,7 @@ body {
 .card h3 {
   color: var(--cor-principal);
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 0.5rem;
+  padding: 0.8rem;
   text-align: center;
   width: 100%;
   text-transform: uppercase;
@@ -359,9 +359,9 @@ body {
   color: var(--cor-principal);
   text-align: center;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -371,10 +371,11 @@ body {
   color: var(--cor-principal);
   text-align: center;
   font-family: Poppins;
-  font-size: 0.625rem;
+  padding: .5rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 0.75rem;
-  gap: .5rem;
+  line-height: 1.2rem;
+  gap: .8rem;
 }
 
 .fa {
